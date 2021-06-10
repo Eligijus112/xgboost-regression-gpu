@@ -2,6 +2,27 @@
 
 A template project for xgboost regression using both cpu and gpu. 
 
+# Virtual environemnt 
+
+To set up a working virtual environemnt you need to have a running anaconda manager on windows. Then, in a prefered bash command interpretator, type: 
+
+```
+conda create python=3.9 --name=gpu
+
+conda activate gpu 
+
+conda install pywin32
+
+pip install -r requirements.txt
+```
+
+To install the environment as a jupyter kernel use:
+
+```
+python -m ipykernel install --user --name gpu
+```
+
+
 # Data 
 
 The data is from the open hackaton hosted by Vinted in 2021 regarding sales data from certain shops in Germany. The data is in the **train.csv** file.
